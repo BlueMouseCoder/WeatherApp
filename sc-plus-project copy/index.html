@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <script
+      src="https://kit.fontawesome.com/594c3d8edf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="src/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar&family=Gentium+Plus&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <div class="card p-4 infoBox" style="width: 50%">
+        <div class="row mx-5">
+          <div class="col-6 text-start">
+            <span class="currentCity" id="current-city"> Orange Park </span>
+            <br />
+            <span class="current-temp" id="current-temp"> 60 </span>
+            <span class="units">
+              <a href="#" id="fahrenheit-link"> °F </a> |
+              <a href="#" id="celsius-link"> °C </a>
+            </span>
+          </div>
+          <div class="col-6 text-end">
+            <span class="week-day" id="week-day">Sunday</span>
+            <br />
+            <span class="time" id="time">hours:minutes</span>
+          </div>
+        </div>
+        <div class="row text-center mt-5 mb-0 mx-2 forecast">
+          <div class="col-2">
+            M
+            <br />
+            <i class="fa-solid fa-sun icon monday"></i>
+            <br />
+            70°F
+          </div>
+          <div class="col-2">
+            T
+            <br />
+            <i class="fa-solid fa-cloud-sun icon tuesday"></i>
+            <br />
+            75°F
+          </div>
+          <div class="col-2">
+            W
+            <br />
+            <i class="fa-solid fa-cloud-sun icon wednesday"></i>
+            <br />
+            82°F
+          </div>
+          <div class="col-2">
+            R
+            <br />
+            <i class="fa-solid fa-cloud-sun icon thursday"></i>
+            <br />
+            84°F
+          </div>
+          <div class="col-2">
+            F
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy icon friday"></i>
+            <br />
+            76°F
+          </div>
+          <div class="col-2">
+            Sa
+            <br />
+            <i class="fa-solid fa-cloud-sun icon saturday"></i>
+            <br />
+            64°F
+          </div>
+        </div>
+        <br />
+        <form class="input-group mb-3" id="search-form">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for a city..."
+            id="search-form-input"
+          />
+          <button class="btn btn-primary" type="button" id="search-form-button">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>🌴Coded by Jules🌴</footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
