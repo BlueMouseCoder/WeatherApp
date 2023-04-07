@@ -41,19 +41,13 @@ h1 {
   font-size: 20px;
 }
 
-.monday {
-  color: rgb(255, 183, 0);
-}
-
+.monday,
 .tuesday,
 .wednesday,
 .thursday,
-.saturday {
-  color: rgb(139, 112, 90);
-}
-
+.saturday,
 .friday {
-  color: blue;
+  color: black;
 }
 
 footer {
