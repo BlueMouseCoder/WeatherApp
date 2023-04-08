@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+h1,
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Eczar", serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.infoBox {
+  background-color: rgb(255, 255, 255);
+  border: solid 3px black;
+  box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.week-day,
+.currentCity {
+  font-family: "Eczar", serif;
+  font-size: 25px;
+}
+.current-temp,
+.time {
+  font-family: "Gentium Plus", serif;
+  font-size: 30px;
+}
+.forecast {
+  font-family: "Gentium Plus", serif;
+  font-size: 16px;
+}
+.icon {
+  font-size: 20px;
+}
+
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.saturday,
+.friday {
+  color: black;
+}
+
+footer {
+  bottom: 0;
+  font-family: "Berkshire Swash", serif;
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
